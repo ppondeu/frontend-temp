@@ -147,7 +147,7 @@
     border-radius: 1rem;
     background-color: var(--light-color);
     color: var(--dark-color);
-    margin-inline: 2rem;
+    /* margin-inline: 2rem; */
     width: 100%;
 
 

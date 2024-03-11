@@ -169,7 +169,7 @@ const rightArrow = document.querySelector('i.fa-chevron-right');
 
 leftArrow.addEventListener('click', () => {
     console.log('left arrow clicked');
-    container.scrollLeft -= container.clientWidth;
+    container.scrollLeft -= container.clientWidth/currentItems;
     startOffset -= 1;
     if (startOffset < 0) {
         startOffset = 0;
@@ -266,4 +266,3 @@ const isDisplayArrow = () => {
     leftArrow.style.display = 'block';  
     rightArrow.style.display = 'block';
 }
-

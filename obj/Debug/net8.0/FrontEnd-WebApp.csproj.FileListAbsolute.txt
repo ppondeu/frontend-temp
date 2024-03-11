@@ -29,3 +29,4 @@ D:\Non-System\Uni\FrontEnd-WebApp\obj\Debug\net8.0\refint\FrontEnd-WebApp.dll
 D:\Non-System\Uni\FrontEnd-WebApp\obj\Debug\net8.0\FrontEnd-WebApp.pdb
 D:\Non-System\Uni\FrontEnd-WebApp\obj\Debug\net8.0\FrontEnd-WebApp.genruntimeconfig.cache
 D:\Non-System\Uni\FrontEnd-WebApp\obj\Debug\net8.0\ref\FrontEnd-WebApp.dll
+D:\Non-System\Uni\FrontEnd-WebApp\obj\Debug\net8.0\FrontEnd-WebApp.sourcelink.json

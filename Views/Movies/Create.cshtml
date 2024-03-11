@@ -37,19 +37,56 @@
         <i class="fa-solid fa-chevron-left"></i>
         <div class="date-horizontal">
             @* <div class="date-container">
-                <p>@DateTime.Now.DayOfWeek</p>
-                <p>@DateTime.Now.ToString("dd MMMM yyyy")</p>
-                <div class="ellipsis-container">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                    <div class="ellipsis-content">
-                        <button class="edit-date">Edit</button>
-                        <button class="delete-date">Delete</button>
-                    </div>
-                </div>
+            <p>@DateTime.Now.DayOfWeek</p>
+            <p>@DateTime.Now.ToString("dd MMMM yyyy")</p>
+            <div class="ellipsis-container">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div class="ellipsis-content">
+            <button class="edit-date">Edit</button>
+            <button class="delete-date">Delete</button>
+            </div>
+            </div>
             </div> *@
         </div>
         <i class="fa-solid fa-chevron-right"></i>
     </div>
-</div>
+    <div class="cinema-showtime">
+        <div class="cinema-container">
+            <div class="cinema-name">
+                <h2>Mega Cineplex</h2>
+            </div>
+            <div class="showtime">
+                <div class="add-showtime-container">
+                    <div class="add-showtime-title">
+                        <p>Add Showtime</p>
+                        <button type="button" title="add-showtime-btn" class="add-showtime"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="add-showtime-input-container">
+                        <div class="add-showtime-input">
+                            <label>Select a Time</label>
+                            <input type="time" id="showtime" value="@DateTime.Now.ToString("HH:mm")">
+                        </div>
+                        <div class="add-showtime-submit">
+                            <button class="cancel-showtime">Cancel</button>
+                            <button class="submit-showtime">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="showtime-container">
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
 
-<button type="button" class="btn btn-primary" id="test">Click</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

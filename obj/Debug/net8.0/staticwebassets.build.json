@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WYU1ymvAgJvrg24kvxjIt+GDpHxWBUpwFGMBqmplI80=",
+  "Hash": "d1S9vWkxl13hrZPFk+7NX0RFhyRP7M8hM/jJgvOubU4=",
   "Source": "FrontEnd-WebApp",
   "BasePath": "_content/FrontEnd-WebApp",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\adminSite.css"
+    },
+    {
+      "Identity": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\createRoom.css",
+      "SourceId": "FrontEnd-WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\",
+      "BasePath": "_content/FrontEnd-WebApp",
+      "RelativePath": "css/createRoom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\createRoom.css"
     },
     {
       "Identity": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\dashboard.css",
@@ -319,6 +338,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\adminSite.js"
+    },
+    {
+      "Identity": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\createRoom.js",
+      "SourceId": "FrontEnd-WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\",
+      "BasePath": "_content/FrontEnd-WebApp",
+      "RelativePath": "js/createRoom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\createRoom.js"
     },
     {
       "Identity": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\dashboard.js",

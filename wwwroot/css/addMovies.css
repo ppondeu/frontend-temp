@@ -129,7 +129,7 @@
     align-items: center;
     justify-content: center;
     margin-inline: 2rem;
-    margin-bottom: 50rem;
+    /* margin-bottom: 50rem; */
 }
 
 .date-horizontal-wrapper > i{
@@ -149,8 +149,6 @@
     color: var(--dark-color);
     /* margin-inline: 2rem; */
     width: 100%;
-
-
 }
 
 .date-horizontal.large{
@@ -187,6 +185,10 @@
 .date-container:hover{
     color: blue;
     cursor: pointer;
+}
+
+.date-container.active{
+    background-color: var(--info-color);
 }
 
 .date-container > p:nth-child(1){
@@ -239,5 +241,133 @@
 .date-container  i.fa-ellipsis-vertical{
     font-size: 2rem;
     cursor: pointer;
+    transition: .3s;
+}
+
+.cinema-showtime{
+    color: var(--dark-color);
+    width: 95%;
+    background-color: var(--light-color);
+    padding: 4rem;
+    margin-inline: auto;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cinema-container{
+    border: 2px solid var(--dark-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    min-height: 35rem;
+}
+
+
+.cinema-container > .cinema-name{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: block;
+    background-color: dimgray;
+    color: var(--dark-color);
+    padding-block: 1rem;
+    padding-inline: 2rem;
+}
+
+.showtime{
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.showtime-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    height: 100%;
+    gap: 3rem;
+    flex: 66.67%;
+}
+
+.showtime-container span{
+    padding: 1rem 3rem;
+    background: linear-gradient(90deg, #2f66cd, #4db0db 75%, #5ab6de);
+    font-weight: 600;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.add-showtime-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 33.33%;
+}
+
+.add-showtime-container > .add-showtime-title{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-showtime-container > .add-showtime-title button{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    width: min-content;
+    height: min-content;
+    transition: .3s;
+}
+
+.add-showtime-container > .add-showtime-title > button:hover{
+    background-color: darkgray;
+    color: var(--light-color);
+}
+
+.add-showtime-container > .add-showtime-title > button:disabled{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.add-showtime-input-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgb(157, 52, 255);
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.add-showtime-input-container > .add-showtime-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.add-showtime-input-container > .add-showtime-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.add-showtime-input-container > .add-showtime-submit > button{
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: .5rem;
+    cursor: pointer;
+    width: min-content;
+    height: min-content;
     transition: .3s;
 }

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\adminSite.css"
     },
     {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\createRoom.css",
+      "PackagePath": "staticwebassets\\css\\createRoom.css"
+    },
+    {
       "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\dashboard.css",
       "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
@@ -63,6 +67,10 @@
     {
       "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\adminSite.js",
       "PackagePath": "staticwebassets\\js\\adminSite.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\createRoom.js",
+      "PackagePath": "staticwebassets\\js\\createRoom.js"
     },
     {
       "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\dashboard.js",

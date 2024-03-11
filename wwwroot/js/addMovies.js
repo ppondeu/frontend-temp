@@ -65,7 +65,6 @@ addDateBTN.addEventListener('click', () => {
         // add date to database
         // do something with the date
         setTimeout(() => {
-            console.log(newDateInput.value);
             // date format: 10 March 2024
             const date = new Date(newDateInput.value);
             const formattedDate = date.toLocaleString('default', { month: 'long' }) + ' ' + date.getDate() + ' ' + date.getFullYear();
@@ -81,7 +80,6 @@ addDateBTN.addEventListener('click', () => {
 
             dateList[formattedDate].push(formattedDate);
             displayDates(dateList[formattedDate]);
-            console.log(dateList);
             addDateBTN.disabled = false;
             newDateContainer.remove();
         }, 500);
@@ -106,17 +104,6 @@ const displayDates = (date) => {
     dayOfWeek.textContent = curDate.toLocaleString('default', { weekday: 'short' });
     dateContainer.appendChild(dayOfWeek);
     dateContainer.appendChild(dateP);
-
-//     <div class="date-container">
-//     <p>@DateTime.Now.DayOfWeek</p>
-//     <p>@DateTime.Now.ToString("dd MMMM yyyy")</p>
-// <div class="ellipsis-container">
-//     <i class="fa-solid fa-ellipsis"></i>
-//     <div class="ellipsis-content">
-//         <button class="edit-date">Edit</button>
-//         <button class="delete-date">Delete</button>
-//     </div>
-// </div>
 
     const ellipsis = document.createElement('div');
     ellipsis.classList.add('ellipsis-container');
@@ -158,8 +145,211 @@ const displayDates = (date) => {
 
 
     dateHorizontal.appendChild(dateContainer);
+    let children = dateHorizontal.children;
+    let currentDatePick = dateContainer;
+    // add active class to date that clicked
+    for (let i = 0; i < children.length; i++) {
+        children[i].addEventListener('click', () => {
+            for (let j = 0; j < children.length; j++) {
+                children[j].classList.remove('active');
+            }
+            children[i].classList.add('active');
+            currentDatePick = children[i];
+            console.log(currentDatePick);
+        });
+    }
     isDisplayArrow();
 }
+
+// select cinema and add showtime
+const cinemaList = [
+    {"name": "Cinema 1", "type": "SF Cinema"},
+    {"name": "Cinema 2", "type": "Major Cineplex"},
+    {"name": "Cinema 3", "type": "Major Cineplex"},
+    {"name": "Cinema 4", "type": "SF Cinema"},
+    {"name": "Cinema 5", "type": "Major Cineplex"},
+    {"name": "Cinema 6", "type": "SF Cinema"},
+    {"name": "Cinema 7", "type": "Major Cineplex"},
+    {"name": "Cinema 8", "type": "SF Cinema"},
+    {"name": "Cinema 9", "type": "Major Cineplex"},
+    {"name": "Cinema 10", "type": "SF Cinema"},
+    {"name": "Cinema 11", "type": "Major Cineplex"},
+    {"name": "Cinema 12", "type": "SF Cinema"},
+    {"name": "Cinema 13", "type": "Major Cineplex"},
+    {"name": "Cinema 14", "type": "SF Cinema"},
+    {"name": "Cinema 15", "type": "Major Cineplex"},
+    {"name": "Cinema 16", "type": "SF Cinema"},
+    {"name": "Cinema 17", "type": "Major Cineplex"},
+    {"name": "Cinema 18", "type": "SF Cinema"},
+    {"name": "Cinema 19", "type": "Major Cineplex"},
+    {"name": "Cinema 20", "type": "SF Cinema"},
+    {"name": "Cinema 21", "type": "Major Cineplex"},
+    {"name": "Cinema 22", "type": "SF Cinema"},
+    {"name": "Cinema 23", "type": "Major Cineplex"},
+    {"name": "Cinema 24", "type": "SF Cinema"},
+    {"name": "Cinema 25", "type": "Major Cineplex"},
+    {"name": "Cinema 26", "type": "SF Cinema"},
+    {"name": "Cinema 27", "type": "Major Cineplex"},
+    {"name": "Cinema 28", "type": "SF Cinema"},
+    {"name": "Cinema 29", "type": "Major Cineplex"},
+    {"name": "Cinema 30", "type": "SF Cinema"},
+]
+
+{/* <div class="cinema-showtime">
+        <div class="cinema-container">
+            <div class="cinema-name">
+                <h2>Mega Cineplex</h2>
+            </div>
+            <div class="showtime">
+                <div class="add-showtime-container">
+                    <div class="add-showtime-title">
+                        <p>Add Showtime</p>
+                        <button type="button" title="add-showtime-btn" class="add-showtime"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="add-showtime-input-container">
+                        <div class="add-showtime-input">
+                            <label>Select a Time</label>
+                            <input type="time" id="showtime" value="@DateTime.Now.ToString("HH:mm")">
+                        </div>
+                        <div class="add-showtime-submit">
+                            <button class="cancel-showtime">Cancel</button>
+                            <button class="submit-showtime">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="showtime-container">
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+                    <span>10:00</span>
+
+                </div>
+            </div>
+        </div>
+    </div> */}
+
+
+const cinemaShowtimeContainer = document.querySelector('.cinema-showtime');
+cinemaList.forEach(cinema => {
+    const cinemaContainer = document.createElement('div');
+    cinemaContainer.classList.add('cinema-container');
+
+    const cinemaName = document.createElement('div');
+    cinemaName.classList.add('cinema-name');
+    const h2 = document.createElement('h2');
+    h2.textContent = cinema.name;
+    cinemaName.appendChild(h2);
+
+    cinemaContainer.appendChild(cinemaName);
+
+    ///
+
+    const showtime = document.createElement('div');
+    showtime.classList.add('showtime');
+
+    const addShowtimeContainer = document.createElement('div');
+    addShowtimeContainer.classList.add('add-showtime-container');
+    
+    const addShowtimeTitle = document.createElement('div');
+    addShowtimeTitle.classList.add('add-showtime-title');
+    const p = document.createElement('p');
+    p.textContent = 'Add Showtime';
+    const addShowtimeBTN = document.createElement('button');
+    addShowtimeBTN.setAttribute('type', 'button');
+    addShowtimeBTN.classList.add('add-showtime');
+    const i = document.createElement('i');
+    i.classList.add('fa-solid', 'fa-plus');
+    addShowtimeBTN.appendChild(i);
+    addShowtimeTitle.appendChild(p);
+    addShowtimeTitle.appendChild(addShowtimeBTN);
+    addShowtimeContainer.appendChild(addShowtimeTitle);
+    const showtimeContainer = document.createElement('div');
+    showtimeContainer.classList.add('showtime-container');
+    
+    addShowtimeBTN.addEventListener('click', () => {
+
+        // disable add button
+        addShowtimeBTN.disabled = true;
+
+        const addShowtimeInputContainer = document.createElement('div');
+        addShowtimeInputContainer.classList.add('add-showtime-input-container');
+
+        const addShowtimeInput = document.createElement('div');
+        addShowtimeInput.classList.add('add-showtime-input');
+        const label = document.createElement('label');
+        label.textContent = 'Select a Time';
+        const input = document.createElement('input');
+        input.setAttribute('type', 'time');
+
+    
+        addShowtimeInput.appendChild(label);
+        addShowtimeInput.appendChild(input);
+        addShowtimeInputContainer.appendChild(addShowtimeInput);
+
+        const addShowtimeSubmit = document.createElement('div');
+        addShowtimeSubmit.classList.add('add-showtime-submit');
+        const cancelBTN = document.createElement('button');
+        cancelBTN.textContent = 'Cancel';
+        cancelBTN.classList.add('cancel-showtime');
+        const submitBTN = document.createElement('button');
+        submitBTN.textContent = 'Submit';
+        submitBTN.classList.add('submit-showtime');
+        addShowtimeSubmit.appendChild(cancelBTN);
+        addShowtimeSubmit.appendChild(submitBTN);
+
+        cancelBTN.addEventListener('click', () => {
+            addShowtimeBTN.disabled = false;
+            addShowtimeInputContainer.remove();
+        });
+
+
+        submitBTN.addEventListener('click', () => {
+            // add showtime to database
+            // do something with the showtime
+            setTimeout(() => {
+                // add showtime to database
+                addShowtimeBTN.disabled = false;
+                
+                const showtime = input.value;
+                if (showtime === '') {
+                    alert('Showtime cannot be empty');
+                    return;
+                }
+
+
+                /////
+
+                // save showtime to database here
+
+                /////
+
+                const span = document.createElement('span');
+                span.textContent = showtime;
+                showtimeContainer.appendChild(span);
+                addShowtimeInputContainer.remove();
+                
+            }, 500);
+        });
+
+        addShowtimeInputContainer.appendChild(addShowtimeSubmit);
+        addShowtimeContainer.appendChild(addShowtimeInputContainer);
+    });
+
+
+    showtime.appendChild(addShowtimeContainer);
+    showtime.appendChild(showtimeContainer);
+
+    cinemaShowtimeContainer.appendChild(cinemaContainer);
+    cinemaContainer.appendChild(showtime);
+});
+
+
 
 
 // JavaScript code to observe container size changes and apply corresponding classes
@@ -168,7 +358,6 @@ const leftArrow = document.querySelector('i.fa-chevron-left');
 const rightArrow = document.querySelector('i.fa-chevron-right');
 
 leftArrow.addEventListener('click', () => {
-    console.log('left arrow clicked');
     container.scrollLeft -= container.clientWidth/currentItems;
     startOffset -= 1;
     if (startOffset < 0) {
@@ -178,7 +367,6 @@ leftArrow.addEventListener('click', () => {
 });
 
 rightArrow.addEventListener('click', () => {
-    console.log('right arrow clicked');
     container.scrollLeft += container.clientWidth/currentItems;
     startOffset += 1;
     if (startOffset > container.children.length) {
@@ -232,7 +420,7 @@ const observer = new ResizeObserver(entries => {
             container.classList.remove('xsmall');
             currentItems = 1;
         }
-        console.log(`currentItems: ${currentItems}`);
+
         isDisplayArrow();
     }
 });

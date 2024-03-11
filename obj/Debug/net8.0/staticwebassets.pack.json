@@ -1,0 +1,165 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\addMovies.css",
+      "PackagePath": "staticwebassets\\css\\addMovies.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\adminSite.css",
+      "PackagePath": "staticwebassets\\css\\adminSite.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\movies.css",
+      "PackagePath": "staticwebassets\\css\\movies.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\profileUpdate.css",
+      "PackagePath": "staticwebassets\\css\\profileUpdate.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\report.css",
+      "PackagePath": "staticwebassets\\css\\report.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\reports.css",
+      "PackagePath": "staticwebassets\\css\\reports.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\signin.css",
+      "PackagePath": "staticwebassets\\css\\signin.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\css\\userSite.css",
+      "PackagePath": "staticwebassets\\css\\userSite.css"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\addMovies.js",
+      "PackagePath": "staticwebassets\\js\\addMovies.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\adminSite.js",
+      "PackagePath": "staticwebassets\\js\\adminSite.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\movies.js",
+      "PackagePath": "staticwebassets\\js\\movies.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\profile.js",
+      "PackagePath": "staticwebassets\\js\\profile.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\profileUpdate.js",
+      "PackagePath": "staticwebassets\\js\\profileUpdate.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\report.js",
+      "PackagePath": "staticwebassets\\js\\report.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\reports.js",
+      "PackagePath": "staticwebassets\\js\\reports.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\js\\userSite.js",
+      "PackagePath": "staticwebassets\\js\\userSite.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FrontEnd-WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FrontEnd-WebApp.props",
+      "PackagePath": "build\\FrontEnd-WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FrontEnd-WebApp.props",
+      "PackagePath": "buildMultiTargeting\\FrontEnd-WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FrontEnd-WebApp.props",
+      "PackagePath": "buildTransitive\\FrontEnd-WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

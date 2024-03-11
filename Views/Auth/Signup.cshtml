@@ -1,0 +1,30 @@
+@{
+  ViewData["Title"] = "Sign Up";
+  ViewData["Styles"] = "/css/signup.css";
+  ViewData["Scripts"] = "~/js/signup.js";
+  Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+    <div class="card">
+        <div class="header">
+            <h2>Sign Up</h2>
+        </div>
+        <form class="register-form">
+            <div class="input-group">
+                <input type="text" name="username" id="username" required>
+                <label for="username">Username</label>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email</label>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" id="password" required>
+                <label for="password">Password</label>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button type="submit" class="btn btn-secondary">Sign Up</button>
+            <p>Already have an account? <a href="/auth/signIn">Sign In</a></p>
+        </form>
+    </div>

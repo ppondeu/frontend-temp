@@ -1,0 +1,49 @@
+@{
+  ViewData["Title"] = "Profile";
+  ViewData["Styles"] = "~/css/profile.css";
+  ViewData["Scripts"] = "~/js/profile.js";
+  Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<section class="user-profile">
+  <h1 class="header-title">your profile</h1>
+  <div class="info">
+    <div class="user">
+      <img src="https://shorturl.at/lsvJZ" alt="profile-img" />
+      <h2>Ben Tennyson</h2>
+      <div class="score">
+        <i class="fa-solid fa-star"></i>
+        <p>4.9</p>
+      </div>
+      <a href="/profile/update" class="btn btn-warning">update profile</a>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="flex">
+          <i class="fa-solid fa-heart"></i>
+          <div>
+            <span>3</span>
+            <p>movies liked</p>
+          </div>
+        </div>
+        <a href="/profile/FavMovies" class="btn btn-warning">view movies</a>
+      </div>
+
+      <div class="box">
+        <div class="flex">
+          <i class="fa-solid fa-users-rectangle"></i>
+          <div>
+            <span>4</span>
+            <p>groups</p>
+          </div>
+        </div>
+        <a href="/profile/groups" class="btn btn-warning">view groups</a>
+      </div>
+
+    </div>
+  </div>
+  <button class="btn btn-danger back" id="back">Back</button>
+</section>
+
+

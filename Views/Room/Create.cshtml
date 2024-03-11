@@ -1,0 +1,88 @@
+@{
+  ViewData["Title"] = "Create Room";
+  ViewData["Styles"] = "~/css/createRoom.css";
+  ViewData["Scripts"] = "~/js/createRoom.js";
+  Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+    <main class="create-room-card">
+        <section class="select-movie-section">
+            <p class="title">MOVIE</p>
+            <div class="movie-content">
+                <div class="button-container">
+                    <button>&lt</button>
+                </div>
+                <div class="movie-grid-container">
+
+                </div>
+                <div class="button-container">
+                    <button>&gt</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="date-section">
+            <p class="title">DATE</p>
+            <div class="date-container">
+                <div class="button-container">
+                    <button id="select-date-left-button" class="left-button">&lt</button>
+                </div>
+                <div class="date-grid-container">
+                </div>
+                <div class="button-container">
+                    <button id="select-date-right-button" class="right-button">&gt</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="theater-showtime-grid">
+            <section class="select-theater-section">
+                <p class="title">THEATER</p>
+                <div id="select-theater-wrapper">
+                    <span id="theater-name">Select Theater</span>
+                    <i class="arrow">&#9660</i>
+                </div>
+                <div class="content">
+                    <div class="select-theater-section-search">
+                        <input id="search-theater-input" type="text" placeholder="Search" />
+                        <button class="search-icon-button">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"
+                                class="search-icon" />
+                        </button>
+                    </div>
+                    <ul id="theater-list">
+                    </ul>
+                </div>
+            </section>
+
+            <section class="select-showtime-section">
+                <p class="title">SHOW TIME</p>
+                <ul id="showtime-card-container">
+                </ul>
+            </section>
+        </section>
+
+        <section class="size-descript-grid">
+            <section class="select-size-section">
+                <p class="title">SIZE</p>
+                <div class="display-container">
+                    <div id="size">
+                    </div>
+                    <div class="select-size-section-button-container">
+                        <button id="up-arrow">&#9650</button>
+                        <button id="down-arrow">&#9660</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="description-section">
+                <p class="title">DESCRIPTION</p>
+                <textarea rows=4 maxlength=248 placeholder="Write something..."></textarea>
+            </section>
+        </section>
+
+        <section class="create-section">
+            <button>CREATE</button>
+        </section>
+
+    </main>

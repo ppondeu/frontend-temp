@@ -1,0 +1,35 @@
+@{
+  ViewData["Title"] = "Favorite Movie";
+  ViewData["Styles"] = "~/css/profile.css";
+  ViewData["Scripts"] = "~/js/profile.js";
+  Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<section class="user-movie">
+    <h1 class="heading">movie liked</h1>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="https://cdn.majorcineplex.com/uploads/movie/3857/thumb_3857.jpg?220220241321" alt="" />
+        <div class="detail">
+          <h3 class="title">Madam Web</h3>
+          <a href="#" class="inline-btn">Remove</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="https://cdn.majorcineplex.com/uploads/movie/3971/thumb_3971.jpg?220220241017" alt="" />
+        <div class="detail">
+          <h3 class="title">Peenak 4</h3>
+          <a href="#" class="inline-btn">Remove</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="https://cdn.majorcineplex.com/uploads/movie/3894/thumb_3894.jpg?200220240900" alt="" />
+        <div class="detail">
+          <h3 class="title">How to have sex</h3>
+          <a href="#" class="inline-btn">Remove</a>
+        </div>
+      </div>
+    </div>
+      <a class="btn btn-danger back" href="/profile" class="btn">Back</a>
+  </section>

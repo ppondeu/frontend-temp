@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "iZCtYJXi8rJ/AJ0ft9DLktwpRIzATyRTP0y3/5BCjLl/rve0zYmpLCSx1hBou/BQmatVgkrqg6Kc6hnFgl5qsQ==",
+  "success": true,
+  "projectFilePath": "D:\\Non-System\\Uni\\FrontEnd-WebApp\\FrontEnd-WebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ponda\\.nuget\\packages\\microsoft.dotnet.watcher.tools\\2.0.2\\microsoft.dotnet.watcher.tools.2.0.2.nupkg.sha512",
+    "C:\\Users\\Ponda\\.nuget\\packages\\microsoft.netcore.app\\2.0.7\\microsoft.netcore.app.2.0.7.nupkg.sha512",
+    "C:\\Users\\Ponda\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.7\\microsoft.netcore.dotnetapphost.2.0.7.nupkg.sha512",
+    "C:\\Users\\Ponda\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.0.7\\microsoft.netcore.dotnethostpolicy.2.0.7.nupkg.sha512",
+    "C:\\Users\\Ponda\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.0.7\\microsoft.netcore.dotnethostresolver.2.0.7.nupkg.sha512",
+    "C:\\Users\\Ponda\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.2\\microsoft.netcore.platforms.2.0.2.nupkg.sha512",
+    "C:\\Users\\Ponda\\.nuget\\packages\\netstandard.library\\2.0.1\\netstandard.library.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

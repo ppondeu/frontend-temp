@@ -1,0 +1,43 @@
+@{
+  ViewData["Title"] = "Profile";
+  ViewData["Styles"] = "/css/profileUpdate.css";
+  ViewData["Scripts"] = "~/js/profileUpdate.js";
+  Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<div class="profile-container">
+  <div class="profile-header">
+    <h1>Profile</h1>
+  </div>
+  <form class="profile-content" method="post">
+    <div class="profile-image">
+      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" />
+    </div>
+    <div class="profile-details">
+      <label for="file">Change Profile Picture</label>
+      <input type="file" id="file" name="file" accept="image/jpg, image/jpeg, image/png" />
+    </div>
+    <div class="profile-details">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" value="John Doe" />
+    </div>
+    <div class="profile-details">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" value="john.doe@mail.com" readonly />
+    </div>
+    <div class="profile-details">
+      <label for="socials">Social</label>
+      <div class="social">
+        <i class="fa-brands fa-facebook"></i>
+        <input type="text" id="facebook" name="facebook" value="https://www.facebook.com/johndoe" />
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <input type="text" id="instagram" name="instagram" value="https://www.instagram.com/johndoe" />
+      </div>
+    </div>
+    <div class="submit-btn">
+      <button class="btn btn-danger" type="submit">Cancel</button>
+      <button class="btn btn-success" type="submit">Update</button>
+    </div>
+  </form>
